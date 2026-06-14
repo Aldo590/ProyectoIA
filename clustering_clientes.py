@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 
 
-
 # DATOS DE LOS CLIENTES
 
 # Cada fila representa un cliente.
@@ -30,7 +29,6 @@ X = np.array([
 ])
 
 
-
 # CREACIÓN DEL MODELO
 
 # Se crea un modelo K-Means con 3 grupos (clusters).
@@ -38,14 +36,10 @@ X = np.array([
 # al ejecutar el programa varias veces.
 modelo = KMeans(n_clusters=3, random_state=42)
 
-
-
 # ENTRENAMIENTO DEL MODELO
 
 # El algoritmo analiza los datos y busca patrones para formar grupos.
 modelo.fit(X)
-
-
 
 # OBTENER LOS RESULTADOS
 
@@ -55,8 +49,6 @@ etiquetas = modelo.labels_
 # cluster_centers_ almacena las coordenadas de los centroides,
 # es decir, el centro de cada grupo encontrado.
 centroides = modelo.cluster_centers_
-
-
 
 # MOSTRAR RESULTADOS EN CONSOLA
 
@@ -75,8 +67,6 @@ for i, cliente in enumerate(X):
         f"--> Grupo {etiquetas[i]}"
     )
 
-
-
 # GRAFICAR LOS CLIENTES
 
 # Se crea un diagrama de dispersión (scatter plot).
@@ -88,8 +78,6 @@ plt.scatter(
     X[:, 1],
     c=etiquetas
 )
-
-
 
 # GRAFICAR LOS CENTROIDES
 

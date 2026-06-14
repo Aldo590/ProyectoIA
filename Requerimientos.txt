@@ -1,0 +1,11 @@
+Librerías utilizadas
+
+NumPy: utilizada para crear y manipular arreglos de datos numéricos.
+Matplotlib: utilizada para generar la gráfica que muestra los grupos encontrados por el algoritmo.
+Scikit-learn: utilizada para implementar el algoritmo de Machine Learning K-Means.
+
+Instalación de librerías
+
+Para instalar las librerías necesarias, se debe ejecutar el siguiente comando en la terminal o símbolo del sistema:
+
+pip install numpy matplotlib scikit-learn
